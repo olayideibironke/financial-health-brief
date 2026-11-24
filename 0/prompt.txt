@@ -1,0 +1,734 @@
+In my financial-health-brief repository, create an interviews/ directory if it does not exist.\
+\
+Copy the original Work Sim Markdown transcript from:\
+C:\Users\Roger\Downloads\interview-r62mbg-20261120-0302.md\
+\
+into interviews/ without modifying, rewriting, cleaning, or reformatting any content. Preserve the original filename.\
+\
+Verify that the copied file is byte-for-byte identical to the downloaded original using SHA-256 hashes. Do not delete the original file.\
+\
+Show me the resulting file path and verification output. Do not commit or push anything yet.
+
+---
+
+Work only in my financial-health-brief repository.\
+\
+First, read the original stakeholder interview transcript under interviews/ without modifying it. Read the README and formal Challenge A assignment requirements.\
+\
+Identify the stakeholder-confirmed business rules, reporting date logic, three live Google Sheets sources, exact output schemas, and any ambiguities that require clarification.\
+\
+Verify Entire recording is enabled for Codex before implementation.\
+\
+Produce an implementation plan for a reusable Agent Skill that fetches all three Google Sheets live, validates and normalizes their data, and creates the required CSV files and management report.\
+\
+The solution must be read-only, deterministic, traceable, and fail safely without leaving stale outputs.\
+\
+Do not invent financial values or hard-code expected answers. Do not modify the interview transcript. Do not begin coding until the plan and unresolved questions have been reviewed.
+
+---
+
+This supplies the formal assignment contract, directs Codex to diagnose the Entire issue safely, and checks live source access before coding.
+
+---
+
+Work in C:UsersRogerinancial-health-brief.\
+\
+Read the assignment PDF located at:\
+C:UsersRogerDownloadsProject_A_Daily_Financial_Health_Brief_Assignment.pdf\
+\
+This is a compiled assignment reference based on the supplied Notion HTML and assignment text. Read it in full, then reconcile its requirements with my original stakeholder interview under interviews/ and the repository README.\
+\
+Copy the PDF into a reference/ directory in this repository without modifying its contents. Do not alter the original interview transcript.\
+\
+Confirm the exact Agent Skill name, required paths, CSV headers, report figures, live Google Sheets retrieval requirements, source metadata, failure handling, and submission rules.\
+\
+Next, investigate the Entire recording verification issue. Entire is enabled, but previous diagnostics reported Access is denied and missing active session state. Perform safe, non-destructive checks and explain whether session capture is functioning.\
+\
+Do not change security permissions, delete hooks or session history, or reinstall anything without approval.\
+\
+Report the remaining business-rule ambiguities and precise next steps. Do not start implementation coding, commit, or push until these checks have been reviewed.
+
+---
+
+This checks the complete source data and recording evidence before we authorize coding.
+
+---
+
+We are resuming Challenge A — Daily Financial Health and Budget Brief.\
+\
+Work exclusively in:\
+C:\Users\Roger\financial-health-brief\
+\
+You are now authorized to begin implementation of the Agent Skill named daily-financial-health-brief.\
+\
+Before making changes, confirm the existing Entire hooks are recording this Codex session and inspect the repository's current status.\
+\
+Read and follow:\
+1\. The original stakeholder transcript in interviews/\
+2\. The formal assignment PDF in reference/\
+3\. The repository README\
+\
+IMPLEMENTATION REQUIREMENTS\
+\
+Create a reusable Agent Skill with:\
+\- daily-financial-health-brief/SKILL.md\
+\- daily-financial-health-brief/scripts/\
+\- daily-financial-health-brief/references/\
+\
+Create the required outputs:\
+\- deliverables/normalized/transactions.csv\
+\- deliverables/normalized/budget.csv\
+\- deliverables/normalized/revenue.csv\
+\- deliverables/report.md\
+\
+Use exactly the normalized CSV column orders specified in the assignment.\
+\
+Implement fresh read-only retrieval of all three original Google Sheets on every execution. Verify that the final program can retrieve the complete data, not merely that the connected Codex account can inspect it.\
+\
+Identify source roles by schema and meaning, not filenames or column positions.\
+\
+Preserve all recognized source rows, including unresolved transactions with blank amounts.\
+\
+Use Decimal arithmetic, deterministic calculations, explicit source provenance, and clear reporting-date parameters.\
+\
+Implement input validation, safe failure behavior, and protection against stale deliverables.\
+\
+Produce a draft management report for human review. Do not edit source data or perform financial actions.\
+\
+Implement only calculations that are supported by the interview and assignment. Do not invent the reporting date, holiday calendar, transaction sign rules, snapshot selection, or other unresolved business policies.\
+\
+For unresolved decisions, provide explicit configuration or fail with a clear message rather than silently assuming.\
+\
+Document one reproducible end-to-end command, dependencies, installation requirements, and runtime behavior.\
+\
+Create automated tests for normalization, materiality boundaries, unknown amounts, reporting windows, source failures, and output reconciliation.\
+\
+Run all available tests and inspect the generated artifacts for correctness.\
+\
+IMPORTANT:\
+\- Never modify, rewrite, or delete the original Work Sim interview transcript.\
+\- Preserve the assignment PDF.\
+\- Do not delete existing Entire sessions, hooks, or Git metadata.\
+\- Do not place credentials or secrets in the repository.\
+\- Do not commit or push yet.\
+\- Do not change unrelated projects.\
+\- If the live Google Sheets cannot be accessed by the actual runtime, explain the blocker rather than generating fabricated outputs.\
+\
+At completion, report:\
+1\. Files created or changed.\
+2\. Actual runtime source-access results.\
+3\. Tests executed and their results.\
+4\. Any remaining business-rule ambiguities.\
+5\. Entire recording and checkpoint status.\
+6\. Whether the solution is ready for final review.\
+\
+Proceed with implementation now.
+
+---
+
+We are continuing Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+The initial Skill implementation is preserved. Do not discard or rewrite it unnecessarily.\
+\
+Our immediate blocker is:\
+urlopen error [Errno 11001] getaddrinfo failed\
+\
+Do not assume that my Windows computer has no internet connection. Determine whether this error originates from the Codex execution sandbox, DNS configuration, restricted network permissions, or another cause.\
+\
+Perform these safe diagnostic steps:\
+\
+1\. Identify the actual Python executable, working directory, execution environment and network restrictions used for the failed run.\
+\
+2\. Test whether docs.google.com resolves from a normal Windows PowerShell session using Resolve-DnsName and whether HTTPS connectivity works using Test-NetConnection on port 443.\
+\
+3\. Compare those results with Python's socket.getaddrinfo("docs.google.com", 443) in the same execution environment that runs the Skill.\
+\
+4\. Determine whether Codex supports an approved network-enabled execution mode or whether the Skill must be run directly from my local PowerShell terminal.\
+\
+5\. If local PowerShell has access but the Codex sandbox does not, provide the exact safe command to run the Skill locally. Do not weaken Windows security or modify DNS settings without approval.\
+\
+6\. Confirm whether the Google Sheets can be read by the actual runner using view-only access, without exposing credentials or changing the spreadsheets. Do not substitute cached or manually copied data.\
+\
+7\. Check whether the current implementation has functional gaps beyond network access, including complete data retrieval, business-rule configuration, exact output schemas, provenance, deterministic calculations and automated tests.\
+\
+8\. Diagnose the Entire access-denied discrepancy using non-destructive checks only. Preserve existing session logs and hook configuration.\
+\
+Do not invent financial figures.\
+Do not alter the original stakeholder interview or assignment PDF.\
+Do not commit or push anything yet.\
+\
+Return:\
+A. Root cause of the network failure, with evidence.\
+B. Whether the normal Windows environment can run the Skill.\
+C. Any configuration or permissions requiring my approval.\
+D. The remaining implementation gaps.\
+E. Recommended next development step.\
+\
+Focus on diagnosis first; do not perform a broad rewrite.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+I have now tested the Skill twice from my NORMAL Windows PowerShell terminal, outside the Codex managed execution environment.\
+\
+Both runs failed with HTTP 400 Bad Request while fetching the Transaction Ledger.\
+\
+Windows DNS resolution works and Test-NetConnection docs.google.com -Port 443 returned TcpTestSucceeded: True.\
+\
+Therefore, do not repeat the DNS diagnostics. Focus on the implementation of live Google Sheets retrieval.\
+\
+TASKS:\
+\
+1\. Inspect the complete current daily-financial-health-brief/scripts/run.py file and identify exactly how the spreadsheet URL is transformed into the CSV export request.\
+\
+2\. Verify that the spreadsheet ID and gid are extracted correctly from:\
+https\://docs.google.com/spreadsheets/d/REDACTED/edit#gid=386574278\
+\
+3\. Check whether the script correctly constructs the Google Sheets CSV export URL, including the format and gid parameters. The fragment #gid=... is not sent in an HTTP request and must be parsed explicitly when selecting a tab.\
+\
+4\. Determine whether HTTP 400 is caused by a malformed export request or whether the requested sheet requires authenticated read-only access.\
+\
+5\. Improve safe diagnostics so the script reports the actual requested endpoint, HTTP status, and a short sanitized explanation of the response. Do not expose credentials, tokens, or private spreadsheet data.\
+\
+6\. If the source requires authentication, propose a supported, view-only authentication method using credentials stored outside the repository. Do not make the spreadsheets public, bypass access controls, or use cached data as a substitute.\
+\
+7\. Make the minimal necessary source-retrieval corrections and add targeted automated tests for URL parsing, gid extraction, request construction, and HTTP error handling.\
+\
+8\. Do not invent financial data, change stakeholder business rules, alter the original interview, or modify the assignment PDF.\
+\
+9\. Do not commit or push yet. Preserve all Entire hooks, checkpoints, and session records.\
+\
+After making the corrections, show:\
+A. The root cause found in run.py.\
+B. The exact files changed.\
+C. The targeted tests and results.\
+D. One corrected PowerShell command for me to run locally.\
+E. Whether any Google authentication approval is still needed.\
+\
+Do not claim the Google Sheets runtime works until my local PowerShell test succeeds.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+The corrected local PowerShell run no longer reports HTTP 400. It now stops with:\
+\
+ERROR: clarification required: configure status mappings, sign conventions, revenue metric selection, and source completeness policy before publishing report\
+\
+We have progressed beyond the earlier retrieval error.\
+\
+Your next task is to complete the implementation using the formal assignment, original stakeholder interview, and observed source schemas.\
+\
+1\. First inspect run.py and establish whether the latest local result proves that all three spreadsheets were actually fetched and validated. Do not claim complete source retrieval without evidence.\
+\
+2\. Inspect the original Work Sim transcript, assignment contract, and actual source schema to establish the documented status and amount_status mappings, signed-amount conventions, date rules, and reporting expectations.\
+\
+3\. Treat these as confirmed source values where supported:\
+&#x20;  \- posted/confirmed\
+&#x20;  \- pending/confirmed\
+&#x20;  \- disputed/confirmed\
+&#x20;  \- pending/unknown\
+\
+&#x20;  Verify actual casing and exact spellings from the source data. Do not guess their meaning beyond stakeholder-confirmed rules.\
+\
+4\. Implement the required five report figures using exact Decimal arithmetic:\
+&#x20;  \- Reporting-date posted total\
+&#x20;  \- Reporting-date pending-confirmed total\
+&#x20;  \- Reporting-date disputed-confirmed total\
+&#x20;  \- Prior-business-day posted total\
+&#x20;  \- Signed change between posted totals\
+\
+5\. Preserve all recognized rows in the three normalized CSVs, including blank amounts for unresolved transactions.\
+\
+6\. Implement month-to-date posted spending versus monthly budgets, unresolved queue reporting, and source-supported revenue and outstanding balances.\
+\
+7\. Implement provenance logging, validation, deterministic behavior, and safe staged publication so partial or stale deliverables are never mistaken for a successful current run.\
+\
+8\. Where the transcript and source data cannot establish a necessary policy, expose an explicit configuration choice and explain exactly what approval is needed. Do not silently invent business rules or hard-code expected financial answers.\
+\
+9\. Complete automated tests for normal and failure cases. Use the available Python runtime and clearly document any required dependencies.\
+\
+10\. Preserve the original interview, assignment PDF, Entire history, and all existing checkpoints. Do not modify source spreadsheets. Do not commit or push yet.\
+\
+After implementation, provide:\
+A. Files changed\
+B. Which business rules were established from evidence\
+C. Which decisions remain unresolved\
+D. Tests executed and results\
+E. The exact local PowerShell command for a full live run\
+F. Confirmation that the original interview and Entire history remain preserved\
+\
+Proceed with the remaining implementation. Stop only when a genuinely necessary stakeholder decision cannot be established from the available evidence.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+I ran the Skill from normal Windows PowerShell using the three original Google Sheets URLs.\
+\
+The latest error is:\
+ERROR: invalid amount value '8,000.00' in row 2\
+\
+The live data contains comma-separated thousands in monetary fields. Fix this validation issue without changing the original source data.\
+\
+Requirements:\
+\
+1\. Inspect the current monetary parsing and validation logic in daily-financial-health-brief/scripts/run.py.\
+\
+2\. Support valid monetary values such as:\
+&#x20;  8000.00\
+&#x20;  8,000.00\
+&#x20;  -8,000.00\
+&#x20;  +8,000.00\
+&#x20;  0.00\
+\
+3\. Convert valid monetary values to Decimal without using floating-point arithmetic. Preserve the original sign and exact decimal precision.\
+\
+4\. Reject malformed numeric representations, including:\
+&#x20;  8,00.00\
+&#x20;  8,000.0.0\
+&#x20;  1,2,3\
+&#x20;  nonnumeric text in required monetary cells\
+\
+5\. Preserve blank amounts only where permitted by the stakeholder-confirmed unknown-amount policy. Do not convert blank unknown amounts to zero.\
+\
+6\. Apply appropriate metric-aware validation to the Revenue Snapshot because some rows represent counts rather than currency amounts.\
+\
+7\. Add automated tests covering positive, negative, zero, comma-formatted, malformed and blank values.\
+\
+8\. Verify that normalized monetary outputs contain valid decimal representations without thousands separators.\
+\
+9\. Do not modify the interview transcript, assignment PDF, source spreadsheets, Entire history, or unrelated repository files.\
+\
+10\. Do not commit or push yet.\
+\
+After implementing the fix, report:\
+\- Root cause\
+\- Files changed\
+\- Tests executed and results\
+\- Any remaining validation blockers\
+\- The exact local PowerShell command to rerun\
+\
+Do not claim the complete Skill works until the local live run succeeds.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+The most recent normal Windows PowerShell run failed with:\
+\
+ERROR: invalid amount value '360' in row 14\
+\
+The financial parser was previously updated to accept thousands separators, but it now appears to reject valid whole-number amounts.\
+\
+TASK:\
+\
+1\. Inspect the current parser and identify exactly why '360' is rejected. Confirm which Google Sheets source, column, and row produced the error.\
+\
+2\. Update monetary parsing to accept valid whole numbers and decimal representations:\
+&#x20;  360\
+&#x20;  360.00\
+&#x20;  8,000.00\
+&#x20;  -360\
+&#x20;  +360.50\
+&#x20;  0\
+&#x20;  0.00\
+\
+3\. Continue rejecting malformed numbers and invalid thousands grouping.\
+\
+4\. Use Decimal exclusively for financial calculations. Do not convert through float or silently round monetary values.\
+\
+5\. Distinguish monetary values from count-based revenue metrics. Valid integer counts must be accepted, while fractional counts should be rejected unless the source contract explicitly allows them.\
+\
+6\. Preserve blank amounts only where the stakeholder's unknown-amount policy permits them. Do not convert unknown amounts to zero.\
+\
+7\. Preserve all recognized source rows and original source-version information.\
+\
+8\. Add focused regression tests for the integer amount '360', formatted values, negative values, blanks, and malformed inputs.\
+\
+9\. Review the other validation code for the same overly restrictive numeric pattern so this issue does not recur in budget_amount or revenue value fields.\
+\
+10\. Keep the original interview, assignment PDF, Entire logs, and checkpoints unchanged. Do not commit or push.\
+\
+Return:\
+A. Exact root cause and affected source field.\
+B. Files changed.\
+C. Tests and results.\
+D. Any additional validation blockers found.\
+E. Confirmation that I should rerun the same local PowerShell command.\
+\
+Do not claim the full live run works until I have tested it locally.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+IMPORTANT NEW EVIDENCE:\
+\
+From my normal Windows PowerShell terminal, this exact Google Sheets export endpoint returned HTTP 200:\
+\
+https\://docs.google.com/spreadsheets/d/REDACTED/export?format=csv&gid=386574278\
+\
+Verified results:\
+\- Backslash in URL: False\
+\- HTTP status: 200\
+\- Content type: text/csv; charset=utf-8\
+\- Response length: 9179 bytes\
+\
+However, the Python Skill runner intermittently returns HTTP 400 for the same apparent export endpoint.\
+\
+TASK:\
+\
+1\. Inspect the current run.py source retrieval implementation, including urllib request construction, request headers, redirect handling, URL parsing, and error handling.\
+\
+2\. Determine whether Python and PowerShell actually send identical URLs and whether their HTTP requests differ in headers, proxy settings, redirects, or other material ways.\
+\
+3\. Check for hidden characters or unintended URL escaping. Do not assume the backslash visible in copied Markdown text exists in the actual Windows command.\
+\
+4\. Add safe diagnostics that print the effective request URL, HTTP status, final redirect URL, response content type, and fetched row count without exposing financial records or credentials.\
+\
+5\. Ensure successful retrieval requires HTTP 200, a valid CSV response, correct schema, and all expected populated rows. Never accept a login page or error HTML as CSV.\
+\
+6\. Preserve strict live fetching of all three Google Sheets on every run. Do not substitute cached files or manually copied source data.\
+\
+7\. Make the smallest necessary corrections supported by evidence, and add regression tests for retrieval and HTTP error handling.\
+\
+8\. Do not modify the original interview, assignment PDF, Google Sheets, Entire hooks, checkpoints, or unrelated files.\
+\
+9\. Do not commit or push yet.\
+\
+Because Codex's managed execution environment has restricted network access, do not claim successful live retrieval from Codex. Provide a precise local PowerShell diagnostic or corrected run command for me to execute.\
+\
+Return the verified root cause if established, changed files, test results, and any remaining blockers.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+MAJOR MILESTONE: I ran the Skill from normal Windows PowerShell, and all three live Google Sheets were retrieved successfully.\
+\
+Verified runtime evidence:\
+\- Transaction Ledger: HTTP 200, text/csv, 70 data rows\
+\- Budget Targets: HTTP 200, text/csv, 10 data rows\
+\- Revenue Snapshot: HTTP 200, text/csv, 25 data rows\
+\
+The command returned to PowerShell without displaying an error.\
+\
+Your next task is to verify the actual state of the implementation and deliverables.\
+\
+1\. Inspect whether these exact files exist:\
+&#x20;  deliverables/normalized/transactions.csv\
+&#x20;  deliverables/normalized/budget.csv\
+&#x20;  deliverables/normalized/revenue.csv\
+&#x20;  deliverables/report.md\
+\
+2\. If any output is absent, determine why the current run completed without producing it. Do not treat source retrieval alone as successful assignment completion.\
+\
+3\. Verify the exact required CSV headers and that all recognized rows are preserved (70 transactions, 10 budget rows, 25 revenue rows for this observed source version).\
+\
+4\. Verify that the report contains all five required signed figures, month-to-date category budget comparisons, unresolved items, revenue and outstanding balances, and source provenance.\
+\
+5\. Check that monetary calculations use Decimal, unknown transaction amounts remain blank, the correct reporting windows are applied, and the report contains no invented financial evidence.\
+\
+6\. Review safe staged publication, source validation, deterministic results for identical inputs, and failure handling.\
+\
+7\. Run all available automated tests. If pytest or PyYAML are unavailable, provide safe local installation or standard-library alternatives, without installing anything without approval.\
+\
+8\. Verify that the original Work Sim transcript and assignment PDF remain unchanged, and inspect Entire recording and checkpoint status without modifying or deleting its history.\
+\
+9\. Do not commit or push yet.\
+\
+Return a concise audit showing:\
+A. Which required deliverables exist and their sizes/row counts.\
+B. Whether all five financial figures are present and correct.\
+C. Tests executed and results.\
+D. Any missing implementation requirements.\
+E. The exact next action required before submission.\
+\
+Do not claim the assignment is complete without verified deliverables.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+The actual local live run has produced all four required deliverables:\
+\- 70 transaction rows\
+\- 10 budget rows\
+\- 25 revenue rows\
+\- deliverables/report.md with all five required figures\
+\
+We are entering final engineering hardening, NOT starting over.\
+\
+TASK 1 — Safe publication\
+\
+Fix the current staged-publication weakness. The four outputs must represent one complete validated run. Implement the strongest practical publication approach compatible with the exact required deliverable paths.\
+\
+Be explicit about the interruption and stale-output guarantees. Do not claim that separate file moves are fully atomic.\
+\
+TASK 2 — Determinism and provenance\
+\
+Preserve real source-fetch timestamps in report.md.\
+\
+Ensure financial calculations and normalized CSV contents are reproducible for identical inputs and reporting parameters. Do not hard-code timestamps, freeze provenance, or invent source versions.\
+\
+Document why report.md bytes may differ across live runs while computed financial results remain deterministic.\
+\
+TASK 3 — Automated testing\
+\
+Ensure the full automated test suite can run in normal Windows PowerShell.\
+\
+Prefer Python standard-library unittest if this avoids unnecessary dependencies; otherwise document the minimal approved testing dependencies.\
+\
+Test:\
+\- Exact CSV headers and complete row preservation\
+\- All five required signed financial figures\
+\- Strict materiality threshold boundaries\
+\- Blank unknown amounts\
+\- Date windows and prior-business-day behavior\
+\- Revenue metric typing\
+\- Duplicate and missing source records\
+\- Invalid data handling\
+\- Failed source retrieval\
+\- Interrupted publication and stale-output protection\
+\- Deterministic normalized outputs\
+\
+TASK 4 — Report reconciliation\
+\
+Independently recompute the five required figures from normalized transactions using Decimal and compare them to report.md.\
+\
+Check:\
+\- Reporting-date posted total: 2750.35\
+\- Reporting-date pending-confirmed total: 2650\
+\- Reporting-date disputed-confirmed total: 1150\
+\- Prior-business-day posted total: 7894.5\
+\- Signed change: -5144.15\
+\
+These are previously observed results to VERIFY, not values to hard-code.\
+\
+Confirm the source row counts, unknown blank amounts, budget comparisons, revenue metrics, and provenance.\
+\
+TASK 5 — Preservation and submission readiness\
+\
+Do not modify the original Work Sim transcript, assignment PDF, or source spreadsheets.\
+\
+Preserve Entire hooks, sessions, checkpoints, and existing Git history.\
+\
+Check whether the documented one-command Skill invocation is complete and reproducible.\
+\
+Do not commit or push yet.\
+\
+Return:\
+A. Files changed.\
+B. Automated test command and results.\
+C. Reconciliation results.\
+D. Publication and failure guarantees, including limitations.\
+E. Any unresolved stakeholder assumptions.\
+F. Exact local PowerShell command for final verification.\
+\
+Proceed with the hardening and tests.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+My normal Windows PowerShell verification has completed.\
+\
+CONFIRMED:\
+\- deliverables/.complete exists\
+\- All four required deliverables exist\
+\- All four outputs were regenerated at 5:27 PM on November 24, 2026\
+\- Six standard-library automated tests passed\
+\- The repository currently has untracked directories:\
+&#x20; .codex/\
+&#x20; .entire/\
+&#x20; daily-financial-health-brief/\
+&#x20; deliverables/\
+&#x20; interviews/\
+&#x20; reference/\
+&#x20; tests/\
+\
+We are preparing for submission. Perform a final READ-ONLY repository and security audit.\
+\
+1\. Inspect git status, remotes, branches, and the exact contents of all untracked directories.\
+\
+2\. Identify which files must be included in the Challenge A submission:\
+&#x20;  \- Agent Skill and implementation scripts\
+&#x20;  \- Operating references\
+&#x20;  \- Tests and run instructions\
+&#x20;  \- Original Work Sim Markdown transcript\
+&#x20;  \- Required normalized CSVs\
+&#x20;  \- Final management report\
+&#x20;  \- Assignment reference PDF if appropriate\
+\
+3\. Check .codex/ and .entire/ carefully for local configuration, credentials, logs, or session files. Explain what should be committed, ignored, or handled through Entire's dedicated checkpoint branch. Do not delete or alter any session records.\
+\
+4\. Audit every file proposed for submission for credentials, personal secrets, tokens, private keys, or accidentally captured environment variables. Do not print secret values.\
+\
+5\. Confirm that the original interview transcript and assignment PDF still match their previously verified SHA-256 hashes.\
+\
+6\. Inspect the generated report for unresolved reporting assumptions, including date selection, timezone, prior business-day calendar, source completeness, and revenue snapshot selection. Confirm these are documented rather than silently represented as approved stakeholder policy.\
+\
+7\. Review whether the six tests adequately cover the assignment requirements. Identify any critical missing tests, especially failed reruns, interrupted publication, and exact signed totals.\
+\
+8\. Review the current Entire checkpoint records and how they must be synchronized to GitHub. Do not delete or recreate the existing checkpoints.\
+\
+9\. Confirm that the GitHub origin points to my fork:\
+https\://github.com/olayideibironke/financial-health-brief\
+\
+10\. Do not create a commit, modify .gitignore, stage files, or push anything yet.\
+\
+Return:\
+A. Exact proposed Git commit file list.\
+B. Files that must remain untracked or be excluded.\
+C. Security audit findings.\
+D. Missing submission requirements or critical tests.\
+E. Entire checkpoint synchronization plan.\
+F. Recommendation on whether it is safe to proceed to commit and push.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+The final read-only repository audit is complete.\
+\
+You are authorized to perform the remaining report and test improvements, but NOT to commit, push, or modify the original evidence.\
+\
+TASK 1 — Document unresolved assumptions\
+\
+Update the report-generation logic in daily-financial-health-brief/scripts/run.py so every successful live run includes a concise section in deliverables/report.md explaining:\
+\
+\- Reporting date is an explicit run parameter, not independently approved by Operations.\
+\- Prior business date is explicitly supplied; the Skill does not establish a holiday calendar.\
+\- Reporting timezone remains a stakeholder policy choice. Do not assume Google Sheets display timezone is necessarily the reporting timezone.\
+\- A successful complete CSV fetch and row validation do not independently prove Operations approved the ledger population.\
+\- Revenue snapshot selection is explicitly supplied and may require stakeholder approval.\
+\- Any other material unconfirmed policies, such as source sign conventions, missing category budgets, and missing revenue metrics.\
+\
+Do not manually edit report.md in a way that the next run would overwrite. Update the program's report renderer.\
+\
+TASK 2 — Expand standard-library automated tests\
+\
+Add or improve unittest tests covering:\
+\- Independent recomputation of all five exact signed totals from controlled fixture rows.\
+\- Reporting-date and prior-business-day boundaries.\
+\- Unresolved queue date boundaries.\
+\- Exact CSV headers and complete row preservation.\
+\- Valid monetary formatting and blank unknown amounts.\
+\- Malformed monetary values and duplicate source keys.\
+\- Failed rerun following a previously successful run.\
+\- Stale-output and .complete marker invalidation.\
+\- Publication rollback when an output replacement raises an exception.\
+\- An explicitly documented limitation for abrupt process termination between separate file replacements.\
+\
+Tests must be offline and deterministic. Do not hard-code the previously observed live financial totals as the implementation's expected answers.\
+\
+TASK 3 — Preserve financial accuracy\
+\
+Do not change the previously verified calculation behavior unless a failing test demonstrates a real error.\
+\
+Keep Decimal arithmetic, live view-only source retrieval, all required output paths, and source provenance intact.\
+\
+TASK 4 — Preserve evidence and Entire\
+\
+Do not modify, rewrite, rename, or delete:\
+\- The original Work Sim Markdown export in interviews/\
+\- The assignment PDF in reference/\
+\- Entire session logs, checkpoints, hooks, or Git metadata\
+\
+Do not place credentials, local session transcripts, temporary caches, or unrelated files in the submission.\
+\
+TASK 5 — Verification\
+\
+Run:\
+python -m unittest discover -s tests -p "test\*\_unittest.py" -v\
+\
+Inspect the updated files and confirm the report renderer will preserve the unresolved-assumptions section on every successful run.\
+\
+Report:\
+A. Files changed.\
+B. Number of tests executed, passed, and failed.\
+C. Whether failure recovery and financial reconciliation tests passed.\
+D. Any remaining implementation limitations.\
+E. Exact normal Windows PowerShell command for the final live run.\
+\
+IMPORTANT:\
+Do not commit.\
+Do not push.\
+Do not run Entire synchronization yet.\
+Do not claim final submission readiness until my local live run is completed.
+
+---
+
+Continue Challenge A in:\
+C:\Users\Roger\financial-health-brief\
+\
+We have completed the final local financial reporting verification:\
+\- 10 of 10 unittest tests passed.\
+\- All four deliverables exist.\
+\- deliverables/.complete exists.\
+\- All 105 source rows were successfully fetched.\
+\- The report contains the required figures and documented assumptions.\
+\
+I have now verified Entire from normal Windows PowerShell.\
+\
+Results:\
+\
+entire status:\
+Enabled on main; Codex active; checkpoints sync to origin.\
+\
+entire checkpoint list --outgoing --json:\
+checkpoint_push_disabled=false\
+checkpoint_push_policy=automatic\
+checkpoints=[]\
+\
+git for-each-ref refs/entire refs/codex:\
+Two local refs exist under refs/codex/turn-diffs/checkpoints/.\
+\
+git ls-remote origin 'refs/codex/turn-diffs/checkpoints/\*':\
+No remote refs returned.\
+\
+git branch -vv:\
+main a950dd8 [origin/main]\
+\
+Git status:\
+All project submission directories remain untracked.\
+\
+TASK:\
+\
+1\. Determine the actual Entire checkpoint storage and synchronization mechanism for our installed Entire CLI version.\
+\
+2\. Establish whether refs/codex/turn-diffs/checkpoints are internal Codex refs or Entire submission checkpoint refs. Do not assume they are identical.\
+\
+3\. Inspect the available Entire CLI documentation and help commands to identify the supported checkpoint synchronization process.\
+\
+4\. Determine why the outgoing queue is empty while the remote query returns no matching refs.\
+\
+5\. Identify whether Entire uses a dedicated branch, Git refs, hidden checkpoint metadata, or another mechanism for remote synchronization.\
+\
+6\. Explain whether creating the first normal Git commit is required before Entire can finalize or synchronize checkpoints.\
+\
+7\. Inspect the existing .entire/settings.json and relevant non-secret configuration. Do not expose or upload private session data unnecessarily.\
+\
+8\. Do not delete, rewrite, manually force-push, or reset any checkpoint refs or session history.\
+\
+9\. Do not commit, stage, push, or modify repository files yet.\
+\
+Return:\
+A. Entire's actual checkpoint synchronization mechanism.\
+B. Whether existing session evidence is safely preserved.\
+C. Whether checkpoint synchronization is complete or still pending.\
+D. The exact supported local PowerShell commands needed next.\
+E. Whether we are safe to proceed with the normal Git commit.\
+\
+Do not claim that synchronization succeeded without verification.

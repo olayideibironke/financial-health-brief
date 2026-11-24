@@ -1,0 +1,46 @@
+{
+  "cli_version": "0.13.4",
+  "checkpoint_id": "01M87W7X0KGAR65D7GC3N1QNZ7",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 17,
+  "files_touched": [
+    "daily-financial-health-brief/SKILL.md",
+    "daily-financial-health-brief/references/contract.md",
+    "daily-financial-health-brief/scripts/run.py",
+    "interviews/interview-r62mbg-20261120-0302.md",
+    "reference/Project_A_Daily_Financial_Health_Brief_Assignment.pdf",
+    "tests/test_hardening_unittest.py",
+    "tests/test_run.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 253615,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 8243456,
+    "output_tokens": 46013,
+    "api_call_count": 92
+  },
+  "redaction": {
+    "replacements": 220,
+    "layers": {
+      "betterleaks": 0,
+      "connection_string": 0,
+      "credential_key": 0,
+      "credential_value": 0,
+      "credentialed_uri": 0,
+      "entropy": 220,
+      "key_context": 0,
+      "provider_token": 0,
+      "shell_stdin": 0
+    }
+  }
+}
